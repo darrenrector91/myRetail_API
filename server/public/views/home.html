@@ -1,5 +1,11 @@
 <div class="container">
     <h1 class="title">My Retail Movies</h1>
+    <div>
+        <label>Search by Product ID</label>
+        <input ng-model="vm.productID">
+        <button class="md-raised md-primary" ng-click="vm.getProduct(vm.productID)">Submit</button>
+        16752456
+    </div>
     <!-- api -->
     <div layout="row" layout-align="center center" class="card">
         <div layout="row" ng-repeat="apiproduct in retail.api.list">
